@@ -30,13 +30,10 @@
           
           <form action="" method="POST">
             <div class="relative">
-              <input id="email" name="email" type="text" class="peer w-full px-0.5 border-0 border-b-2 border-gray-300 placeholder-transparent focus:ring-0 focus:border-purple-600" placeholder="willPig@tailwind.com">
-              <label for="email" class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-purple-600 peer-focus:text-sm">Email</label>
+              <input id="key" name="kwy" type="text" class="peer w-full px-0.5 border-0 border-b-2 border-gray-300 placeholder-transparent focus:ring-0 focus:border-purple-600" placeholder="willPig@tailwind.com">
+              <label for="key" class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-purple-600 peer-focus:text-sm">Key</label>
             </div>
-            <div class="mt-10 relative">
-              <input id="password" type="password" name="password" class="peer w-full px-0.5 border-0 border-b-2 border-gray-300 placeholder-transparent focus:ring-0 focus:border-purple-600" placeholder="Password" />
-              <label for="password" class="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-purple-600 peer-focus:text-sm">Password</label>
-            </div>
+           
             
             <button type="button" class="w-full mt-14 py-4 text-lg text-white font-semibold text-center rounded-full bg-purple-500 transition-all hover:bg-purple-600 focus:outline-none">Sign in</button>
             <p class="text-center text-sm text-gray-400 mt-4">not Have an account ? <a href="#/register" class="font-semibold text-purple-600 hover:underline">Register</a></p>

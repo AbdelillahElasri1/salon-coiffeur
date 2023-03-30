@@ -3,12 +3,12 @@
     header("Access-Control-Allow-Origin: *");
     header("Content-Type: application/json; charset=UTF-8");
 
-    include_once '../config/database.php';
-    include_once '../class/employees.php';
+    include_once '../../config/database.php';
+    include_once '../../class/appointments.php';
     $database = new Database();
     $db = $database->getConnection();
-    $items = new Employee($db);
-    $stmt = $items->getEmployees();
+    $items = new Appointments($db);
+    $stmt = $items->getAppointments();
     $itemCount = $stmt->rowCount();
 
     echo json_encode($itemCount);
@@ -19,12 +19,11 @@
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
             extract($row);
             $e = array(
-                'id' => $id,
-                'name' => $name,
-                'email' => $email,
-                'age' => $age,
-                'designation' => $designation,
-                'created' => $created,
+                'Appointment_id' => $Appointment_id,
+                'Appointment_time' => $Appointment_time,
+                'Appointment_date' => $Appointment_date,
+                'client_id' => $client_id,
+                
             );
             array_push($employeeArr["body"], $e);
         }
